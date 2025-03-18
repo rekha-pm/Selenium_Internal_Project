@@ -38,26 +38,17 @@ public class GeneralUtilities {
 	public String getCssvalueOfElement_Utility(WebElement element,String cssPropertyName ) {
 		return element.getCssValue(cssPropertyName);
 	}
-	
-	
-	
-	
+		
 	public void clickUsingJavaScriptExecutor_Utility(WebDriver driver,WebElement element) {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
 	}
-	
-	
+		
 	public void scrollUsingJavaScriptExecutor_Utility(WebDriver driver,WebElement element) {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", element);
 	}
-	
-	
-	
-	
-	
-	
+				
 	public void keyDown_Utility(WebDriver driver,Keys key) {
 		Actions actions = new Actions(driver);
 		actions.keyDown(key).perform();
@@ -93,19 +84,11 @@ public class GeneralUtilities {
 		actions.dragAndDrop(sourceElement, destinationElement).perform();
 	}
 	
-	
-	
-	
-	//*****************************FileUpload***********************************//
-	
+		
      public void fileUpload_Utility(WebElement element,String filePath) {
     	 element.sendKeys(filePath);
      }
-	
-     
-     
-     
-	//******************************DropDown********************************//
+	     
     public boolean isMultipleDropdown_Utility(WebElement element) {
  		Select select = new Select(element);
  		return select.isMultiple();
@@ -160,10 +143,7 @@ public class GeneralUtilities {
 		return select.getAllSelectedOptions().stream().map(WebElement::getText).collect(Collectors.toList());
 	}
 	
-	
-	
-	
-	//******************************Alert********************************//
+		
 	public void switchToAlertAccept_Utility(WebDriver driver) {
 		driver.switchTo().alert().accept();		
 	}
@@ -180,9 +160,7 @@ public class GeneralUtilities {
 		driver.switchTo().alert().sendKeys(text);		
 	}
 	
-	
-	
-	//******************************Frames********************************//
+		
 	public void switchToFrameByIndex_Utility(WebDriver driver,int index) {
 		driver.switchTo().frame(index);		
 	}
@@ -204,8 +182,6 @@ public class GeneralUtilities {
 	}
 	
 	
-	
-	//******************************WindowHandle********************************//
 	public String getParenetWindowhandle_Utility(WebDriver driver) {
 		return driver.getWindowHandle();
 		
@@ -221,14 +197,11 @@ public class GeneralUtilities {
 	
 	
 	
-	//**********************************Sleep********************************//
 	public void addSleep_Utility(long timeOut) throws InterruptedException {
 		Thread.sleep(timeOut);
 	}
 	
 	
-	
-	//*****************************Random Number generation**************************//
 	public String createRandomNumber_Utility() {
 		Random rand = new Random();
         int uniqueID = rand.nextInt(1000000);         

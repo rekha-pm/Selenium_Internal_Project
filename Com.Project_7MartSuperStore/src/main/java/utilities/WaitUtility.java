@@ -16,7 +16,6 @@ public class WaitUtility {
 	WebDriver driver;
 	
 
-	//**************************Explicit Wait***************************************************//
 	public void waitForElementToBeClickableByXpathLocator_Utility(String locatorValue,int timeOut) {
 		
 		wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
@@ -66,10 +65,7 @@ public class WaitUtility {
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
 	
-	
-	
-	//**************************Fluent Wait***************************************************//
-	
+		
 	public void fluentWaitForElementtoBeClickableByXpathLocator_Utility(String locatorValue,int totalTimeOut,int pollingTimeOut ) {
 		
 		FluentWait<WebDriver> wait = new FluentWait<> (driver)
