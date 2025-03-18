@@ -38,12 +38,12 @@ public class ManageProductPage {
     	  searchButton_Blue.click();
     	  productCodeTextBox.sendKeys(pCode);
     	  productSearchButton_Red.click();
-	}
+	 }
 
 	 public String getTextOfResultProductName() {
 		 	wu.waitForElementToBeVisibleByElement_Utility(productNameResult, 2000);
 			return gu.getTextOfElement_Utility(productNameResult);
-		}
+	}
 	 
 	 public List<String> getAllOptionsfromCategoryDropdown(){
 		 searchButton_Blue.click();

@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class GeneralUtilities {
 	
-	//*******************************WebElementCommands***********************************//
+	
 	public String getTextOfElement_Utility(WebElement element) {
 		return element.getText();
 	}
@@ -41,7 +41,7 @@ public class GeneralUtilities {
 	
 	
 	
-	//*******************************Java Script***********************************//
+	
 	public void clickUsingJavaScriptExecutor_Utility(WebDriver driver,WebElement element) {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
@@ -56,7 +56,7 @@ public class GeneralUtilities {
 	
 	
 	
-	//*********************** Mouse&Keyboard Actions********************************//
+	
 	
 	public void keyDown_Utility(WebDriver driver,Keys key) {
 		Actions actions = new Actions(driver);
