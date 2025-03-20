@@ -1,0 +1,18 @@
+
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="retry.RetryListener" />
+	</listeners>
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="testClasses.CategoryPageTestCases" />
+			<class name="testClasses.DashBoardTestCases" />
+			<class name="testClasses.ManageProductTestCases" />
+			<class name="testClasses.LoginPageTestCases" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

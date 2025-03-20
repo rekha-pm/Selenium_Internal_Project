@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import elementRepository.DashBoardPage;
 import elementRepository.LoginPage;
 import elementRepository.ManageProductPage;
+import utilities.Constants;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -34,7 +35,7 @@ public class BaseClass {
 	  driver = new ChromeDriver();
 	  driver.get(property.getProperty("base_url"));
       driver.manage().window().maximize();
-      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.implicitWait));
   }
   
 

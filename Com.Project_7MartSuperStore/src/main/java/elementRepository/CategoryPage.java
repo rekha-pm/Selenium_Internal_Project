@@ -37,16 +37,29 @@ public class CategoryPage {
 	
 	
 	
-	public void addCategory(String categoryName,String filePath) {
+	
+	/*
+	 * public void addCategory(String categoryName, String filePath) {
+	 * newButton.click(); String renadomCategoryName = categoryName +
+	 * gu.createRandomNumber_Utility();
+	 * categorytextBox.sendKeys(renadomCategoryName); discountGroup.click();
+	 * gu.fileUpload_Utility(chooseFileButton, filePath);
+	 * gu.scrollUsingJavaScriptExecutor_Utility(driver, saveButton);
+	 * gu.clickUsingJavaScriptExecutor_Utility(driver, saveButton);
+	 * 
+	 * }
+	 */
+	 
+	
+	public void addCategory(String categoryName) {
 		newButton.click();
-		String renadomCategoryName = categoryName+gu.createRandomNumber_Utility();
-		categorytextBox.sendKeys(renadomCategoryName);
-		discountGroup.click();
-		gu.fileUpload_Utility(chooseFileButton, filePath);
-		gu.scrollUsingJavaScriptExecutor_Utility(driver, saveButton);
-		gu.clickUsingJavaScriptExecutor_Utility(driver, saveButton);
+		categorytextBox.sendKeys(categoryName);
+		//gu.scrollUsingJavaScriptExecutor_Utility(driver, saveButton);
+		//gu.clickUsingJavaScriptExecutor_Utility(driver, saveButton);
+		saveButton.click();
 		
 	}
+	
 	
 	public String vefifySuccessMessageAfterCategoryCreation() {
 		return gu.getTextOfElement_Utility(caegoryCreationSuccessMesssage);

@@ -11,6 +11,7 @@ import dataProvider.DataProviderClass;
 import elementRepository.CategoryPage;
 import elementRepository.DashBoardPage;
 import elementRepository.LoginPage;
+import utilities.RandomDataUtility;
 
 public class CategoryPageTestCases extends BaseClass{
 	
@@ -23,7 +24,10 @@ public class CategoryPageTestCases extends BaseClass{
 	  lp = new LoginPage(driver);
 	  dbp = lp.logIn(uName, pW);
 	  cp = dbp.navigateToCategoryPage();
-	  cp.addCategory("mouse","C:\\Users\\REKHA PM\\Desktop\\ComputerMouse.jpeg");
+	  //cp.addCategory("mouse","C:\\Users\\REKHA PM\\Desktop\\ComputerMouse.jpeg");
+	  String strCategoryname = RandomDataUtility.getCategoryName();
+	  System.out.println("RandomCategoryName: " +strCategoryname);
+	  cp.addCategory(strCategoryname);
 	  String actual_SuccessMessage = cp.vefifySuccessMessageAfterCategoryCreation();
 	  System.out.println("Message After category Creation:" +actual_SuccessMessage);
 	  Assert.assertTrue(actual_SuccessMessage.contains("Category Created Successfully"));

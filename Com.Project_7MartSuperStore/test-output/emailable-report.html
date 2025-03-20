@@ -8,11 +8,35 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,674</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">GroupingTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">909</td><td>Group1</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testClasses.LoginPageTestCases</td><td><a href="#m0">verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle</a></td><td rowspan="1">1742190611463</td><td rowspan="1">882</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GroupingTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testClasses.LoginPageTestCases</td><td><a href="#m0">verifySuccessfulLogIn</a></td><td rowspan="1">1742451764329</td><td rowspan="1">3</td></tr><tr class="failedeven"><td><a href="#m1">verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle</a></td><td rowspan="1">1742451764333</td><td rowspan="1">3</td></tr><tr class="failedodd"><td rowspan="1">testClasses.ManageProductTestCases</td><td><a href="#m2">verifyTheSeachFunctionality</a></td><td rowspan="1">1742451763490</td><td rowspan="1">40</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testClasses.LoginPageTestCases#verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>GroupingTest</h2><h3 id="m0">testClasses.LoginPageTestCases#verifySuccessfulLogIn</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at elementRepository.LoginPage.logIn(LoginPage.java:46)
+	at testClasses.LoginPageTestCases.verifySuccessfulLogIn(LoginPageTestCases.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testClasses.LoginPageTestCases#verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at utilities.GeneralUtilities.getTextOfElement_Utility(GeneralUtilities.java:19)
+	at elementRepository.LoginPage.getTextOf7MartHeading(LoginPage.java:42)
+	at testClasses.LoginPageTestCases.verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle(LoginPageTestCases.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testClasses.ManageProductTestCases#verifyTheSeachFunctionality</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>454</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at elementRepository.LoginPage.logIn(LoginPage.java:46)
+	at testClasses.ManageProductTestCases.verifyTheSeachFunctionality(ManageProductTestCases.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

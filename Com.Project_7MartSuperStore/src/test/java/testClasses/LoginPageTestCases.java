@@ -9,6 +9,7 @@ import base.BaseClass;
 import dataProvider.DataProviderClass;
 import elementRepository.DashBoardPage;
 import elementRepository.LoginPage;
+import retry.RetryAnalyzer;
 import utilities.ExcelRead;
 
 public class LoginPageTestCases extends BaseClass{
@@ -17,7 +18,7 @@ public class LoginPageTestCases extends BaseClass{
 	DashBoardPage dbp;
 	
 	
-  @Test
+  @Test(groups = {"Group1"})
   public void verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle() throws IOException {
 	  lp = new LoginPage(driver);
 		/*
@@ -31,7 +32,7 @@ public class LoginPageTestCases extends BaseClass{
   }
   
   
-  @Test(dataProviderClass = DataProviderClass.class,dataProvider = "successfulLogIn")
+  @Test(dataProviderClass = DataProviderClass.class,dataProvider = "successfulLogIn", groups = {"Group1"})
   public void verifySuccessfulLogIn(String uName,String pW) throws IOException {
 	  lp = new LoginPage(driver);
 	  dbp = lp.logIn(uName, pW);
@@ -52,7 +53,7 @@ public class LoginPageTestCases extends BaseClass{
 	  Assert.assertTrue(actual_InvalidLogInName.contains("Invalid Username"));
 	 }
   
-  @Test
+  @Test(retryAnalyzer = RetryAnalyzer.class)
   public void verifyRememberMeCheckBoxIsNotCheckedByDefault() {
 	  lp = new LoginPage(driver);
 	  boolean actual_status = lp.isRememeberMeCheckBoxChecked();

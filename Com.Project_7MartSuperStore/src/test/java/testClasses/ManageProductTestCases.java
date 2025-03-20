@@ -21,7 +21,7 @@ public class ManageProductTestCases extends BaseClass{
 	 
 	
 	
-  @Test(dataProviderClass = DataProviderClass.class,dataProvider = "searchProduct")
+  @Test(dataProviderClass = DataProviderClass.class,dataProvider = "searchProduct",groups = {"Group1"} )
   public void verifyTheSeachFunctionality(String pCode) {
 	  lp = new LoginPage(driver);
 	  dbp = lp.logIn("admin", "admin");
