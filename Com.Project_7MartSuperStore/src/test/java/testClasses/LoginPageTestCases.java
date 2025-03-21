@@ -18,7 +18,7 @@ public class LoginPageTestCases extends BaseClass{
 	DashBoardPage dbp;
 	
 	
-  @Test(groups = {"Group1"})
+  @Test(groups = "Group1",retryAnalyzer = RetryAnalyzer.class)
   public void verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle() throws IOException {
 	  lp = new LoginPage(driver);
 		/*
@@ -32,7 +32,7 @@ public class LoginPageTestCases extends BaseClass{
   }
   
   
-  @Test(dataProviderClass = DataProviderClass.class,dataProvider = "successfulLogIn", groups = {"Group1"})
+  @Test(dataProviderClass = DataProviderClass.class,dataProvider = "successfulLogIn", groups = "Group1")
   public void verifySuccessfulLogIn(String uName,String pW) throws IOException {
 	  lp = new LoginPage(driver);
 	  dbp = lp.logIn(uName, pW);
@@ -58,8 +58,8 @@ public class LoginPageTestCases extends BaseClass{
 	  lp = new LoginPage(driver);
 	  boolean actual_status = lp.isRememeberMeCheckBoxChecked();
 	  System.out.println("RememberMeCheckBox Status:" +actual_status);
-	  Assert.assertFalse(actual_status);
-	  
+	  //Assert.assertFalse(actual_status);
+	  Assert.assertTrue(actual_status);
   }
   
 

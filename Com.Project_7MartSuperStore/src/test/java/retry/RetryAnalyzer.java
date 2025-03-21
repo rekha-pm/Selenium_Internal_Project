@@ -13,8 +13,8 @@ public class RetryAnalyzer implements IRetryAnalyzer  {
 	public boolean retry(ITestResult result) {
 		
 		if (initialRetryCount < maxRetryCount) {
-			
 			initialRetryCount++;
+			//System.out.println("Retrying test: " + result.getName() + " | Attempt: " + (initialRetryCount));
 			return true;
 		}
 				

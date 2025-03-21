@@ -1,5 +1,7 @@
 C:\Users\REKHA PM\git\Selenium_Internal_Project\Com.Project_7MartSuperStore\src\test\java\base\BaseClass.java
 C:\Users\REKHA PM\git\Selenium_Internal_Project\Com.Project_7MartSuperStore\src\test\java\dataProvider\DataProviderClass.java
+C:\Users\REKHA PM\git\Selenium_Internal_Project\Com.Project_7MartSuperStore\src\test\java\extentReport\ExtentManager.java
+C:\Users\REKHA PM\git\Selenium_Internal_Project\Com.Project_7MartSuperStore\src\test\java\extentReport\TestListener.java
 C:\Users\REKHA PM\git\Selenium_Internal_Project\Com.Project_7MartSuperStore\src\test\java\retry\RetryAnalyzer.java
 C:\Users\REKHA PM\git\Selenium_Internal_Project\Com.Project_7MartSuperStore\src\test\java\retry\RetryListener.java
 C:\Users\REKHA PM\git\Selenium_Internal_Project\Com.Project_7MartSuperStore\src\test\java\testClasses\CategoryPageTestCases.java

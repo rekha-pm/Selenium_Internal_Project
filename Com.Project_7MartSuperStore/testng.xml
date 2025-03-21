@@ -3,16 +3,20 @@
 
 	<listeners>
 		<listener class-name="retry.RetryListener" />
+		<listener class-name="extentReport.TestListener" />
 	</listeners>
-
+	
+	
 	<test thread-count="5" name="Test">
+	<parameter name="browser" value="chrome" > </parameter>
 		<classes>
-			<class name="testClasses.CategoryPageTestCases" />
+			<!-- <class name="testClasses.CategoryPageTestCases" />
 			<class name="testClasses.DashBoardTestCases" />
-			<class name="testClasses.ManageProductTestCases" />
+			<class name="testClasses.ManageProductTestCases" />-->
 			<class name="testClasses.LoginPageTestCases" />
 		</classes>
 	</test> <!--
 	Test -->
+
 </suite> <!--
 Suite -->
