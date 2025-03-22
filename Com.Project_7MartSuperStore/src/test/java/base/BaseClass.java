@@ -37,18 +37,20 @@ public class BaseClass {
 		ExtentManager.createInstance();
 	}
 	
-  @BeforeMethod
+	
+	
+  @BeforeMethod(groups = {"Launch"})
   @Parameters("browser")
   public void beforeMethod(String browserName) throws IOException {
 	  readProperty();
 	 
 	  if(browserName.equalsIgnoreCase("Chrome")) {
+		  System.out.println("Execution through Chrome Browser.");
 		  driver = new ChromeDriver();
 	  }
-	  else if(browserName.equalsIgnoreCase("Edge")) {
-		  driver = new EdgeDriver();
-	  }
+	
 	  else if(browserName.equalsIgnoreCase("Firefox")) {
+		  System.out.println("Execution through Firefox Browser.");
 		  driver = new FirefoxDriver();
 	  }
 	  else {
@@ -62,7 +64,8 @@ public class BaseClass {
   
   
 
-  @AfterMethod
+  
+  @AfterMethod(groups = {"End"})
   public void afterMethod() {
 	
 	 driver.quit();

@@ -5,8 +5,9 @@
 	<parameter name="browser" value="chrome" > </parameter>
 		<groups>
 			<run>
+				<include name="Launch"></include>
 				<include name="Group1"></include>
-				<!--<include name="Group1"></include>-->
+				<include name="End"></include>
 			</run>
 		</groups> 
 		
@@ -14,6 +15,7 @@
 			<class name="testClasses.ManageProductTestCases" />
 			<class name="testClasses.LoginPageTestCases" />
 		</classes>
+		
 	</test> <!--
 	Test -->
 </suite> <!--

@@ -1,32 +1,31 @@
-
-<suite name="CrossBrowserTestSuite" parallel="tests" thread-count="2">
+<suite name="CrossBrowserTestSuite" parallel="tests"  thread-count="2">
 
 <listeners>
 		 <!--<listener class-name="retry.RetryListener" />-->
 		<listener class-name="extentReport.TestListener" />
 </listeners>
 
-
   <test name="ChromeTest">
   <parameter name="browser" value="chrome" > </parameter>
     <classes>
-      <class name="testClasses.DashBoardTestCases"/>
+      <class name="testClasses.LoginPageTestCases"/>
       <!-- <class name="testClasses.ManageProductTestCases"/>
+      <class name="testClasses.DashBoardTestCases"/>
        <class name="testClasses.CategoryPageTestCases"/>
-      <class name="testClasses.LoginPageTestCases"/>-->
+      -->
     </classes>
   </test> <!-- Test -->
   
-
-  <test name="EdgeTest">
-  <parameter name="browser" value="edge" > </parameter>
+  
+  <test name="FirefoxTest">
+  <parameter name="browser" value="firefox" > </parameter>
     <classes>
-      <class name="testClasses.DashBoardTestCases"/>
+      <class name="testClasses.LoginPageTestCases"/>
       <!-- <class name="testClasses.ManageProductTestCases"/>
+      <class name="testClasses.DashBoardTestCases"/>
        <class name="testClasses.CategoryPageTestCases"/>
       <class name="testClasses.LoginPageTestCases"/>-->
     </classes>
   </test> <!-- Test -->
-  
   
 </suite> <!-- Suite -->

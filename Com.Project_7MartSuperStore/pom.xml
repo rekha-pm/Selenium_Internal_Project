@@ -85,7 +85,8 @@
 				<configuration>
 					<suiteXmlFiles>
 						<file>testng.xml</file>
-					</suiteXmlFiles>
+						<!--<file>crossBrowserWithParallel.xml</file>-->
+						</suiteXmlFiles>
 				</configuration>
 			</plugin>
 

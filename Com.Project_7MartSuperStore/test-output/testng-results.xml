@@ -1,9 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-21T12:11:50 IST" name="CrossBrowserTestSuite" finished-at="2025-03-21T12:11:50 IST" duration-ms="0">
+  <suite started-at="2025-03-22T00:51:37 IST" name="Suite" finished-at="2025-03-22T00:51:49 IST" duration-ms="12625">
     <groups>
+      <group name="Group1">
+        <method signature="LoginPageTestCases.verifySuccessfulLogIn(java.lang.String,java.lang.String)[pri:0, instance:testClasses.LoginPageTestCases@5542c4ed]" name="verifySuccessfulLogIn" class="testClasses.LoginPageTestCases"/>
+        <method signature="LoginPageTestCases.verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle()[pri:0, instance:testClasses.LoginPageTestCases@5542c4ed]" name="verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle" class="testClasses.LoginPageTestCases"/>
+        <method signature="ManageProductTestCases.verifyTheSeachFunctionality(java.lang.String)[pri:0, instance:testClasses.ManageProductTestCases@618b19ad]" name="verifyTheSeachFunctionality" class="testClasses.ManageProductTestCases"/>
+      </group> <!-- Group1 -->
     </groups>
-  </suite> <!-- CrossBrowserTestSuite -->
+    <test started-at="2025-03-22T00:51:37 IST" name="GroupingTest" finished-at="2025-03-22T00:51:49 IST" duration-ms="12625">
+      <class name="testClasses.LoginPageTestCases">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testClasses.LoginPageTestCases@5542c4ed]" started-at="2025-03-22T00:51:43 IST" name="beforeMethod" finished-at="2025-03-22T00:51:45 IST" duration-ms="2629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySuccessfulLogIn(java.lang.String,java.lang.String)[pri:0, instance:testClasses.LoginPageTestCases@5542c4ed]" started-at="2025-03-22T00:51:45 IST" name="verifySuccessfulLogIn" data-provider="successfulLogIn" finished-at="2025-03-22T00:51:46 IST" duration-ms="743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLogIn -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testClasses.LoginPageTestCases@5542c4ed]" started-at="2025-03-22T00:51:46 IST" name="afterMethod" finished-at="2025-03-22T00:51:46 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testClasses.LoginPageTestCases@5542c4ed]" started-at="2025-03-22T00:51:46 IST" name="beforeMethod" finished-at="2025-03-22T00:51:49 IST" duration-ms="2607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle()[pri:0, instance:testClasses.LoginPageTestCases@5542c4ed]" started-at="2025-03-22T00:51:49 IST" name="verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle" finished-at="2025-03-22T00:51:49 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testClasses.LoginPageTestCases@5542c4ed]" started-at="2025-03-22T00:51:49 IST" name="afterMethod" finished-at="2025-03-22T00:51:49 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testClasses.LoginPageTestCases -->
+      <class name="testClasses.ManageProductTestCases">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testClasses.ManageProductTestCases@618b19ad]" started-at="2025-03-22T00:51:37 IST" name="beforeMethod" finished-at="2025-03-22T00:51:40 IST" duration-ms="3330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTheSeachFunctionality(java.lang.String)[pri:0, instance:testClasses.ManageProductTestCases@618b19ad]" started-at="2025-03-22T00:51:40 IST" name="verifyTheSeachFunctionality" data-provider="searchProduct" finished-at="2025-03-22T00:51:42 IST" duration-ms="1813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[454]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheSeachFunctionality -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testClasses.ManageProductTestCases@618b19ad]" started-at="2025-03-22T00:51:42 IST" name="afterMethod" finished-at="2025-03-22T00:51:42 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testClasses.ManageProductTestCases -->
+    </test> <!-- GroupingTest -->
+  </suite> <!-- Suite -->
 </testng-results>

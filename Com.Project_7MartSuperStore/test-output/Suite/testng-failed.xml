@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="extentReport.TestListener"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="GroupingTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Group1"/>
+      </run>
+    </groups>
     <classes>
       <class name="testClasses.LoginPageTestCases">
         <methods>
-          <include name="afterMethod"/>
-          <include name="verifyRememberMeCheckBoxIsNotCheckedByDefault"/>
-          <include name="createReport"/>
-          <include name="beforeMethod"/>
+          <include name="verifyTheExactPageIsOpenesWhileHittingTheURL_UsingTitle"/>
+          <include name="verifySuccessfulLogIn" invocation-numbers="0"/>
         </methods>
       </class> <!-- testClasses.LoginPageTestCases -->
+      <class name="testClasses.ManageProductTestCases">
+        <methods>
+          <include name="verifyTheSeachFunctionality" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testClasses.ManageProductTestCases -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- GroupingTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
